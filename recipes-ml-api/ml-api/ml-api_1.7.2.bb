@@ -30,9 +30,9 @@ EXTRA_OEMESON += "\
     -Denable-tizen=false \
 "
 
-INSANE_SKIP_${PN} += "dev-so"
+INSANE_SKIP:${PN} += "dev-so"
 
-FILES_${PN} += "\
+FILES:${PN} += "\
     ${libdir}/*.so \
 "
 
@@ -42,7 +42,7 @@ RDEPENDS_${PN} = "\
     nnstreamer \
 "
 
-FILES_${PN}-dev = "\
+FILES:${PN}-dev = "\
     ${includedir}/nnstreamer/*.h \
     ${libdir}/*.a \
     ${libdir}/pkgconfig/*.pc \
