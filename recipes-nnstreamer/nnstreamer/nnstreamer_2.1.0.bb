@@ -9,6 +9,7 @@ LIC_FILES_CHKSUM = "\
 
 DEPENDS = "\
             orc-native \
+            json-glib \
             glib-2.0 \
             gstreamer1.0 \
             gstreamer1.0-plugins-base \
